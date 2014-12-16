@@ -18,7 +18,11 @@ You need to supply two things to this utility and it will do the rest for you.
 - File [path of the .srt file to be fixed]
 - Lag or Ahead duration [by what duration subtitle is lagging behind or is Ahead]
 
-### An example is always awesome  
+### An example is always awesome
+
+```bash
+upsirshak -file=/home/Documents/test.srt -sec=1 -msec=1
+```
 
 
 
