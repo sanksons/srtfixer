@@ -1,9 +1,8 @@
 package main
 
+//import the srt package which contains necessary SRT reading writing functions
+//import the flag package to handle command line arguments
 import (
-	//"fmt"
-	//"os"
-	//"strings"
 	"srtfixer/srt"
 	"flag"
 )
