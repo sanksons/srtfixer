@@ -15,11 +15,14 @@ type Config struct {
 var gConfig Config
 
 func init() {
-	filePtr := flag.String("file", "", "a string")
-	secPtr  := flag.Int("sec", 0, "a string")
-	msecPtr := flag.Int("msec", 0, "a string")
+	filePtr := flag.String("file", "", "Path to srt file")
+	secPtr  := flag.Int("sec", 0, "Seconds to RUSH or LAG")
+	msecPtr := flag.Int("msec", 0, "microseconds to RUSH or LAG")
+	//parse the cli flags
 	flag.Parse()
+	//calculate lag by combining seconds and microseconds
 	lag := int64(*msecPtr * 1000000  + *secPtr * 1000000000)
+	//setup params in global config
 	gConfig = Config {
 		File: *filePtr,
 		Lag: lag,
