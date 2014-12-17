@@ -21,7 +21,13 @@ You need to supply two things to this utility and it will do the rest for you.
 ### An example is always awesome
 
 ```bash
-upsirshak -file=/home/Documents/test.srt -sec=1 -msec=1
+//Parameters:
+//   -file [path of the srt file]
+//   -sec  [lag or rush in seconds]
+//   -msec [lag or rush in micro seconds]
+
+
+./upsirshak -file=/home/Documents/test.srt -sec=1 -msec=1
 ```
 
 
